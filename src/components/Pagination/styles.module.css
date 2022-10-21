@@ -1,0 +1,15 @@
+
+.paginationBtn{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.paginationBtn:hover {
+    background-color: royalblue;
+    color: white;
+}

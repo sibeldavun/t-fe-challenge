@@ -1,0 +1,9 @@
+.item {
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.item:last-of-type{
+    border-bottom: none;
+}

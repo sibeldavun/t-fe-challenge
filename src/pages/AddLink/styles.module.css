@@ -1,0 +1,112 @@
+.main {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.img {
+    width: 150px;
+    height: 70px;
+    margin-right: 56px;
+}
+
+.formBox {
+    margin-top: 40px;
+}
+
+.returnBack {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.cardDetail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cardInput {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+::placeholder {
+    color: silver;
+}
+
+.lbl {
+    color: dimgray;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 15px;
+    float: right;
+    color: white;
+    background-color: midnightblue;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: royalblue;
+}
+
+@media only screen and (min-width: 760px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .card {
+        margin-top: 45px;
+    }
+
+    .formBox {
+        margin-top: 100px;
+    }
+
+    .cardInput {
+        width: 400px;
+        height: 30px;
+    }
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 5px;
+}
+
+.redLbl {
+    color: red;
+}
+
+.redInput {
+    border-color: red;
+}
+
+.redInput::placeholder {
+    color: red;
+}
