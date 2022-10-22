@@ -20,7 +20,7 @@ function Footer() {
                             <iframe
                                 title='Tesodev map location'
                                 id="gmap_canvas"
-                                src="http://maps.google.com/maps?q=tesodev&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                src="https://maps.google.com/maps?q=tesodev&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameBorder="0"
                                 scrolling="no"
                                 marginHeight="0"
