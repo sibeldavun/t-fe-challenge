@@ -7,7 +7,7 @@ function Footer() {
             <div className={styles.footerBox}>
                 <div className={styles.footerImg}>
                     <input className={styles.img} type="image"
-                        src="http://picsum.photos/id/0/200/150" alt="Carousel Image" loading="lazy" />
+                        src="https://picsum.photos/id/0/200/150" alt="Carousel Image" loading="lazy" />
                 </div>
                 <div className={styles.footerText}>
                     <div>İletişim</div>
