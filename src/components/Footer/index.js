@@ -18,7 +18,7 @@ function Footer() {
                     <div className={styles.mapouter}>
                         <div className={styles.gmapCanvas}>
                             <iframe
-
+                                title='Tesodev map location'
                                 id="gmap_canvas"
                                 src="http://maps.google.com/maps?q=tesodev&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameBorder="0"

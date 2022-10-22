@@ -34,21 +34,19 @@ function Search() {
     data.sort((a, b) => {
       return a["fullName"].localeCompare(b["fullName"])
     })
+  } else if (sort === "namedescending") {
+    data.sort((a, b) => {
+      return b["fullName"].localeCompare(a["fullName"])
+    })
   } else if (sort === "yearascending") {
     data.sort((a, b) => {
       return a["createDate"] - b["createDate"]
     })
 
-  } else if (sort == "yeardescending") {
+  } else if (sort === "yeardescending") {
     data.sort((a, b) => {
       return a["createDate"] - b["createDate"]
     }).reverse()
-  }
-  else {
-    data.sort((a, b) => {
-      return b["fullName"].localeCompare(a["fullName"])
-
-    })
   }
   let pageNumber = searchParams.get("page")
   pageNumber = pageNumber === null ? 1 : pageNumber

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from "react-router-dom";
 import styles from './styles.module.css';
 
@@ -11,14 +11,13 @@ function Pagination({ pageCount }) {
         if (pageNumber === 1) {
             searchParams.delete("page")
             setSearchParams(searchParams)
-
-
         }
         else {
             searchParams.delete("page")
             searchParams.append("page", pageNumber)
             setSearchParams(searchParams)
         }
+        // eslint-disable-next-line
     }, [pageNumber])
 
     const decrease = () => {
@@ -28,9 +27,9 @@ function Pagination({ pageCount }) {
 
     return (
         <div>
-            <button hidden={pageNumber == 1 ? true : false} className={styles.paginationBtn} onClick={decrease}>Previous</button>
+            <button hidden={pageNumber === 1 ? true : false} className={styles.paginationBtn} onClick={decrease}>Previous</button>
             <button hidden={pageNumber >= pageCount ? true : false} className={styles.paginationBtn} onClick={() => setPageNumber(pageNumber + 1)}>Next</button>
         </div>
     )
 }
-export default Pagination;
+export default React.memo(Pagination);

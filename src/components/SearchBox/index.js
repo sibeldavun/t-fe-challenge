@@ -24,7 +24,7 @@ function SearchBox() {
         items = items.slice(0, 3);
 
         setData(items)
-    }, [searchInput])
+    }, [searchInput,links])
 
     const changeInput = (event) => {
         setSearchInput(event.target.value)
@@ -54,7 +54,7 @@ function SearchBox() {
             </form>
             <div className={styles.searchTable}>
                 {
-                    searchInput !== "" && data.length != 0 && focused === true ? (<div className={styles.table}> {
+                    searchInput !== "" && data.length !== 0 && focused === true ? (<div className={styles.table}> {
 
                         (
                             (data.map((item) => {
