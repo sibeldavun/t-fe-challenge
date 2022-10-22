@@ -17,12 +17,10 @@ function Search() {
 
   const { links } = useContext(LinksContext)
 
-
   let [searchParams] = useSearchParams();
 
   let filter = searchParams.get("q")
   filter = filter === null ? "" : filter
-
   let data = links.filter((item) => {
     return Object.keys(item).some((key) =>
       item[key].toString().toLowerCase().includes(filter.toLocaleLowerCase())
@@ -48,6 +46,7 @@ function Search() {
       return a["createDate"] - b["createDate"]
     }).reverse()
   }
+  
   let pageNumber = searchParams.get("page")
   pageNumber = pageNumber === null ? 1 : pageNumber
   const indexOfLastRecord = pageNumber * 5 //5 = recordsperpage

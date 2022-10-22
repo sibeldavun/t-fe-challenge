@@ -12,7 +12,7 @@ function Footer() {
                 <div className={styles.footerText}>
                     <div>İletişim</div>
                     <div>Adres: Çifte Havuzlar Mah. Eski Londra Asfaltı Cad. Kuluçka Merkezi D2 Blok No:151/1F İç Kapı No: 2B03, 34220 Esenler/İstanbul</div>
-                    <div style={{marginTop:"50px"}}>Email: bilgi@tesodev.com</div>
+                    <div className={styles.footerEmailInfo}>Email: bilgi@tesodev.com</div>
                 </div>
                 <div className={styles.footerMap}>
                     <div className={styles.mapouter}>
