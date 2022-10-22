@@ -4,11 +4,11 @@ import styles from './styles.module.css'
 
 function Carousel() {
     const [items, setItems] = useState([
-        "http://picsum.photos/id/237/300/150",
-        "http://picsum.photos/id/238/300/150",
-        "http://picsum.photos/id/239/300/150",
-        "http://picsum.photos/id/240/300/150",
-        "http://picsum.photos/id/241/300/150"])
+        "https://picsum.photos/id/237/300/150",
+        "https://picsum.photos/id/238/300/150",
+        "https://picsum.photos/id/239/300/150",
+        "https://picsum.photos/id/240/300/150",
+        "https://picsum.photos/id/241/300/150"])
 
     const clickRight = () => {
         let arr = items.slice()
