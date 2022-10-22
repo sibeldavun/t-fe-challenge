@@ -1,65 +1,50 @@
-.img {
-    width: 150px;
-    height: 70px;
-    margin-right: 50px;
-}
-
 .header {
-
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 10px;
-
-}
-.header:nth-child(1){
-    order: 1;
-}
-.header:nth-child(2){
-    order: 2;
 }
 
 .headerLeft {
     display: flex;
     align-items: center;
-}
-
-.addItemBtn {
-    color: white;
-    background-color: midnightblue;
-    border-radius: 10px;
-    width: 180px;
-    height: 40px;
-    border: none;
-    margin-right: 40px;
-}
-
-.addItemBtn:hover {
-    background-color: royalblue;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .container {
- display: flex;
- margin: 200px;
- flex-direction: column;
- margin-top: 0px;
-
+    display: flex;
+    margin: 5%;
+    flex-direction: column;
+    margin-top: 0px;
 }
 
-.sortBox{
-display:flex ;
-justify-content: flex-end;
+.sortBox {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .paginationBox {
-  display:flex ;
-  justify-content: center;
-  align-items: center;
-
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+@media only screen and (min-width: 821px) {
+
+    .headerLeft {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    .container {
+        margin: 20%;
+        margin-top: 0px;
+    }
+}
 
 @media only screen and (min-width: 1000px) {
 
@@ -68,13 +53,6 @@ justify-content: flex-end;
         justify-content: space-between;
         align-items: center;
         margin: 10px;
+        flex-direction: row;
     }
-    
-    .headerLeft {
-        display: flex;
-        align-items: center;
-    }
-    
-
-
 }

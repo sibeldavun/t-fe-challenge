@@ -2,28 +2,45 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-bottom: 5px;
 }
+
+.card:hover {
+    background-color: lightsteelblue;
+    border-radius: 5px;
+}
+
 .pinBox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .img {
     width: 30px;
     height: 25px;
     margin-right: 10px;
-
 }
 
 .cardLeft {
     display: flex;
     flex-direction: row;
 }
-.locationInfo{
-   display: flex;
-   text-align: center;
-   flex-direction: column;
-   align-items: center;
 
+.cardRight {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.locationInfo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grayColor {
+    color: gray
 }

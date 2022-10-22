@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
+import moment from 'moment';
 
 
 function Link({ values }) {
@@ -13,25 +14,21 @@ function Link({ values }) {
           <div style={{ fontWeight: "bold" }}>
             {values.city}
           </div>
-          <div>
+          <div className={styles.grayColor}>
             {values.country}
           </div>
         </div>
-
-
       </div>
-      <div>
-        <div>
+      <div className={styles.cardRight}>
+        <div className={styles.grayColor}>
           {values.fullName}
         </div>
-        <div>
-          {values.fullName}
+        <div style={{ fontWeight: "bold", marginTop: "2px" }}>
+          {moment(values.createDate).format('DD/MM/YYYY')}
         </div>
       </div>
     </div>
-
-
   )
 }
 
-export default Link
+export default Link;

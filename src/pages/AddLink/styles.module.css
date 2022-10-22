@@ -5,10 +5,7 @@
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    flex-direction: row;
+    margin: 10px;
 }
 
 .img {
@@ -51,6 +48,10 @@
     margin-top: 5px;
 }
 
+.cardInput:hover {
+    background-color: gainsboro;
+}
+
 ::placeholder {
     color: silver;
 }
@@ -81,7 +82,7 @@
     }
 
     .card {
-        margin-top: 45px;
+        margin-top: 30px;
     }
 
     .formBox {

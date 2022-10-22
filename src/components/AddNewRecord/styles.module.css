@@ -1,0 +1,13 @@
+.addItemBtn {
+    color: white;
+    background-color: midnightblue;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-right: 40px;
+}
+
+.addItemBtn:hover {
+    background-color: royalblue;
+}

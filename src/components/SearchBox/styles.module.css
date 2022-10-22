@@ -1,10 +1,14 @@
 .searchInput {
-    width: 400px;
-    height: 10px;
+    width: 180px;
+    height: 8px;
     padding: 15px;
     border: 1px solid black;
     border-radius: 8px;
-    margin-right: 25px;   
+    margin-right: 10px;
+}
+
+.searchInput:hover {
+    background-color: gainsboro;
 }
 
 ::placeholder {
@@ -15,11 +19,91 @@
     color: white;
     background-color: midnightblue;
     border-radius: 10px;
-    width: 100px;
+    width: 80px;
     height: 40px;
     border: none;
 }
 
 .searchBtn:hover {
     background-color: royalblue;
+}
+
+@media only screen and (min-width: 470px) {
+
+    .searchInput {
+        width: 250px;
+        margin-right: 25px;
+    }
+
+    .searchBtn {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+    .searchInput {
+        width: 400px;
+    }
+}
+
+.table {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.showMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.showMoreBtn {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.pinBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.cardLeft {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.grayColor {
+    color: gray
+}
+
+.searchTable {
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+}
+
+@media only screen and (min-width: 650px) {
+    .searchTable {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .searchTable {
+        width: 500px;
+    }
 }

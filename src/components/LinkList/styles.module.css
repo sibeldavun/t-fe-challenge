@@ -4,6 +4,6 @@
     width: 80%;
 }
 
-.item:last-of-type{
+.item:last-of-type {
     border-bottom: none;
 }

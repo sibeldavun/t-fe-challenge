@@ -4,11 +4,15 @@ import validations from './validations';
 import LinksContext from '../../context/LinksContext';
 import { NavLink } from 'react-router-dom';
 import styles from './styles.module.css';
-
+import { v4 as uuid } from 'uuid';
+import { useEffect } from 'react';
+import Brand from '../../components/Brand';
 
 function AddLink() {
+    useEffect(() => {
+        document.title = "Add-Link";
+    }, []);
     const { links, setLinks } = useContext(LinksContext)
-
 
     const { handleSubmit, handleChange, values, errors, touched, handleBlur } = useFormik({
         initialValues: {
@@ -18,21 +22,17 @@ function AddLink() {
             email: '',
         },
 
-        onSubmit: values => {
-            setLinks([...links, values])
-            alert(JSON.stringify(values, null, 2));
-
+        onSubmit: (values, { resetForm }) => {
+            setLinks([...links, { ...values, id: uuid(), createDate: new Date() }])
+            resetForm({ values: '' })
         },
-
         validationSchema: validations,
-
     });
-
 
     return (
         <div className={styles.main}>
             <div className={styles.header}>
-                <input className={styles.img} type="image" src={`title.jpg`} alt="Title Image" loading="lazy" />
+                <Brand />
             </div>
             <div className={styles.card}>
                 <div>
@@ -69,8 +69,6 @@ function AddLink() {
                 </div>
             </div >
         </div >
-
     )
 }
-
 export default AddLink;

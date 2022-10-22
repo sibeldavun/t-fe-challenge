@@ -1,0 +1,49 @@
+.addNewRecord {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.searchTitle {
+    display: flex;
+    margin: 5% 5% 0% 5%;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.newsTitle {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.newsBox {
+    margin: 2%;
+}
+
+.text {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .searchTitle {
+        margin: 2% 20% 0% 20%;
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .searchTitle {
+        margin: 2% 30% 0% 30%;
+
+    }
+}
