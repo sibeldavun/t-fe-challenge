@@ -1,7 +1,7 @@
 # Tesodev Case Study Application
 
 ## Live Address for Application
-- https://starwars-application.netlify.app/
+- coming soon :)
 
 ## Running 
 - run `npm install` in terminal     => For loading node_modules
