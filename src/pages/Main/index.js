@@ -20,8 +20,10 @@ function Main() {
         <Brand />
       </div>
       <div className={styles.searchTitle}>
-        <p className={styles.text}>Find in records</p>
-        <SearchBox />
+        <div style={{ width: "100%" }}>
+          <p className={styles.text}>Find in records</p>
+          <SearchBox />
+        </div>
       </div>
       <div className={styles.newsBox}>
         <div className={styles.newsTitle}>

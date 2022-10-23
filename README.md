@@ -1,7 +1,7 @@
 # Tesodev Case Study Application
 
 ## Live Address for Application
-- coming soon :)
+- https://tesodev-case-study.netlify.app/
 
 ## Running 
 - run `npm install` in terminal     => For loading node_modules

@@ -24,7 +24,7 @@ function SearchBox() {
         items = items.slice(0, 3);
 
         setData(items)
-    }, [searchInput,links])
+    }, [searchInput, links])
 
     const changeInput = (event) => {
         setSearchInput(event.target.value)
@@ -42,13 +42,17 @@ function SearchBox() {
             search: q
         })
     }
-
+    const blur = () => {
+        setTimeout(() => {
+            setFocused(false)
+        }, 100);
+    }
     return (
         <div>
             <form className={styles.form} onSubmit={submit}>
                 <input className={styles.searchInput} value={searchInput} onChange={changeInput}
                     onFocus={() => setFocused(true)}
-                    onBlur={() => setFocused(false)}
+                    onBlur={blur}
                 />
                 <button className={styles.searchBtn} type='submit'>Search</button>
             </form>

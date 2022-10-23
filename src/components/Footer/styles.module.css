@@ -4,6 +4,7 @@
     bottom: 0;
     width: 100%;
     height: 180px;
+    position: fixed;
 }
 
 .footerBox {
@@ -13,9 +14,11 @@
     padding: 1%;
     flex-direction: row;
 }
-.footerEmailInfo{
+
+.footerEmailInfo {
     margin-top: 20%;
 }
+
 .footerText {
     width: 45%;
     color: white;
@@ -28,16 +31,15 @@
 
 
 @media only screen and (min-width: 1200px) {
-    .footer {
-        position: fixed;
-    }
-    .footerEmailInfo{
+
+    .footerEmailInfo {
         margin-top: 50px;
     }
-    .footerText{
+
+    .footerText {
         font-size: medium;
     }
-    
+
 
 }
 

@@ -1,36 +1,28 @@
 .carousel {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     align-items: center;
 }
 
 .carouselItems {
-    margin-top: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 80%;
 }
 
-@media only screen and (min-width: 1200px) {
-
-    .carousel {
-        flex-direction: row;
-    }
-
-    .carouselItems {
-        margin-top: 0px;
-        display: flex;
-        flex-direction: row;
-    }
+.carouselBtn {
+    width: 10%;
+    display: flex;
+    justify-content: center;
 }
 
-.carouselImg {
-    margin: 4%;
-    margin-top: 5px;
+
+.carouselItemBox {
+    width: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.leftBtn {
-    margin-right: 5%;
-}
 
 .btn {
     border-radius: 70%;

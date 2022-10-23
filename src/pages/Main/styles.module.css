@@ -1,7 +1,13 @@
 .addNewRecord {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .addNewRecord {
+        justify-content: flex-end;
+    }
 }
 
 .brand {
@@ -12,20 +18,19 @@
 
 .searchTitle {
     display: flex;
-    margin: 5% 5% 0% 5%;
-    align-items: flex-start;
+    margin: 0% 5% 0% 5%;
+    align-items: center;
     flex-direction: column;
-
 }
 
 .newsTitle {
-    display: flex;
-    justify-content: flex-start;
-
+    margin-top: 0%;
+    margin-left: 10%;
 }
 
 .newsBox {
-    margin: 2%;
+    margin: 0% 2% 0% 2%;
+    overflow: hidden;
 }
 
 .text {
@@ -34,16 +39,57 @@
     margin-bottom: 10px;
 }
 
+@media only screen and (min-height: 800px) {
+    .newsBox {
+        margin: 6% 2% 0% 2%;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .searchTitle {
+        margin: 1% 5% 1% 5%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .searchTitle {
+        margin: 1% 10% 1% 10%;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     .searchTitle {
-        margin: 2% 20% 0% 20%;
-
+        margin: 1% 20% 1% 20%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .searchTitle {
-        margin: 2% 30% 0% 30%;
+        margin: 0% 25% 0% 25%;
+    }
+}
 
+@media only screen and (min-width: 1400px) {
+    .searchTitle {
+        margin: 0% 28% 0% 28%;
+
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .searchTitle {
+        margin: 0% 32% 0% 32%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .searchTitle {
+        margin: 0% 35% 0% 35%;
+    }
+}
+
+@media only screen and (min-width: 2320px) {
+    .searchTitle {
+        margin: 0% 37% 0% 37%;
     }
 }
