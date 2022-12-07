@@ -12,3 +12,27 @@
     background-color: royalblue;
     color: white;
 }
+
+
+.page{
+    color: black;
+    background-color: white;
+    margin:5px;
+    border:1px solid;
+    border-radius:3px;
+    width:20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page:hover{
+    color: white;
+    background-color: royalblue;
+}
+
+.activePage{
+    background-color: midnightblue;
+    color: white;
+}
